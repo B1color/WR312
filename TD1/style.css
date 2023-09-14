@@ -1,0 +1,50 @@
+h1{
+color: #FFF;
+font-family: Playfair Display;
+font-size: 80px;
+font-style: normal;
+font-weight: 800;
+line-height: 88px; 
+}
+h2{
+    color: #1E1E1E;
+text-align: center;
+font-family: Rubik;
+font-size: 46px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 104.348% */
+letter-spacing: 1.84px;
+text-transform: uppercase;
+}
+h3{
+    color: #1E1E1E;
+font-family: Rubik;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px; /* 110% */
+}
+h4{
+    color: #FFF;
+text-align: center;
+font-family: Rubik;
+font-size: 46px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 104.348% */
+letter-spacing: 1.84px;
+text-transform: uppercase;
+}
+p{
+    color: #1E1E1E;
+font-family: Quicksand;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px; /* 145% */
+}
+#indus, p{
+    background: #18302B;
+    color: #FFF;
+}
