@@ -89,6 +89,14 @@ p{
     display: flex;
   justify-content: center;
 }
+.raidus{
+    background-color: #FFF;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    margin: 5%;
+}
 #lastimage{
  /*mettre l'image au centre de la div*/
  display: flex;
