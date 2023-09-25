@@ -48,7 +48,7 @@ h4{
     line-height: 104.348%;
     letter-spacing: 1.84px;
     text-transform: uppercase;
-    padding: 3%;
+    padding: 6%;
 }
 p{
     color: #1E1E1E;
@@ -83,6 +83,11 @@ p{
     display: flex;
   justify-content: center;
   gap: 10%;
+  padding-bottom: 6%;
+}
+.icone p{
+    display: flex;
+  justify-content: center;
 }
 #lastimage{
  /*mettre l'image au centre de la div*/
