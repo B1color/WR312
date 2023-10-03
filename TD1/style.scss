@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+$Police-Texte: Rubik;
+$background-color1: #FFF;
+;
+
+@mixin font-style($font-family, $font-size, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#b-page-header{
+    background-image: url("image/Rectangle13.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    h1{
+        color: #FFF;
+        font-family: Playfair Display;
+        font-size: 80px;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .button{
+        background-color:$background-color1;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        width: 164px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 5%;
+    
+    }
+}
+#card{
+    p{
+        @include font-style(Quicksand, 20px, #1E1E1E);
+    }
+    h2{
+        @include font-style(Rubik, 46px, #1E1E1E);
+        text-transform: uppercase;
+        padding: 5%;
+    }
+    .card__content{
+        display: flex;
+        width: 100%;
+        margin: 5%;
+        align-items: center;
+        h3{
+            @include font-style(Rubik, 40px, #1E1E1E);
+            padding: 2%;
+        }
+        
+        .card__featured{
+            width: 50%;
+            padding: 5%;
+        }
+    }
+}
+#carousel{
+    background: #18302B;
+    h4{
+        @include font-style(Rubik, 46px, #fff);
+        text-align: center;
+        padding: 6%;
+    }
+    p{
+        @include font-style(Quicksand, 20px, #fff);
+    }
+    #carousel--svg{
+        display: flex;
+      justify-content: center;
+      gap: 10%;
+      padding-bottom: 6%;
+    }
+    .carousel--svg--feature p{
+        display: flex;
+      justify-content: center;
+    }
+}
+#card2{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+   }
+
+

@@ -1,98 +1,94 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-h1{
-color: #FFF;
-font-family: Playfair Display;
-font-size: 80px;
-padding-left: 5%;
-padding-top: 5%;
-}
-.button{
-    background-color: #FFF;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    width: 164px;
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 5%;
-
-}
-h2{
-    color: #1E1E1E;
-font-family: Rubik;
-font-size: 46px;
-font-style: normal;
-letter-spacing: 1.84px;
-text-transform: uppercase;
-}
-h3{
-    color: #1E1E1E;
-    font-family: Rubik;
-    font-size: 40px;
-    font-style: normal;
-}
-#card{
-    margin: 3%;
-}
-h4{
-    color: #FFF;
-    text-align: center;
-    font-family: Rubik;
-    font-size: 46px;
-    font-style: normal;
-    line-height: 104.348%;
-    letter-spacing: 1.84px;
-    text-transform: uppercase;
-    padding: 6%;
-}
-p{
-    color: #1E1E1E;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 29px; /* 145% */
-}
-#carousel, #carousel p{
-    background: #18302B;
-    color: #FFF;
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#b-page-header{
-    background-image: url("image/Rectangle13.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 688px;
+#b-page-header {
+  background-image: url("image/Rectangle13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-.card--content{
-    display: flex;
-    width: 100%;
-    margin: 5%;
+#b-page-header h1 {
+  color: #FFF;
+  font-family: Playfair Display;
+  font-size: 80px;
+  padding-left: 5%;
+  padding-top: 5%;
 }
-.card--card--featured{
-    width: 50%;
+#b-page-header .button {
+  background-color: #FFF;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  width: 164px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5%;
+}
+
+#card p {
+  font-family: Quicksand;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+#card h2 {
+  font-family: Rubik;
+  font-size: 46px;
+  color: #1E1E1E;
+  text-transform: uppercase;
   padding: 5%;
 }
-#carousel--svg{
-    display: flex;
+#card .card__content {
+  display: flex;
+  width: 100%;
+  margin: 5%;
+  align-items: center;
+}
+#card .card__content h3 {
+  font-family: Rubik;
+  font-size: 40px;
+  color: #1E1E1E;
+  padding: 2%;
+}
+#card .card__content .card__featured {
+  width: 50%;
+  padding: 5%;
+}
+
+#carousel {
+  background: #18302B;
+}
+#carousel h4 {
+  font-family: Rubik;
+  font-size: 46px;
+  color: #fff;
+  text-align: center;
+  padding: 6%;
+}
+#carousel p {
+  font-family: Quicksand;
+  font-size: 20px;
+  color: #fff;
+}
+#carousel #carousel--svg {
+  display: flex;
   justify-content: center;
   gap: 10%;
   padding-bottom: 6%;
 }
-.carousel--svg--feature p{
-    display: flex;
+#carousel .carousel--svg--feature p {
+  display: flex;
   justify-content: center;
 }
 
-#card2--image{
- /*mettre l'image au centre de la div*/
- display: flex;
- justify-content: center;
- margin: 5%;
-}
+#card2 {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}/*# sourceMappingURL=style.css.map */
