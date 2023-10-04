@@ -3,6 +3,11 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }
 
 #b-page-header {
@@ -32,6 +37,9 @@
   margin-left: 5%;
 }
 
+#card {
+  height: 100vh;
+}
 #card p {
   font-family: Quicksand;
   font-size: 20px;
@@ -46,7 +54,6 @@
 }
 #card .card__content {
   display: flex;
-  width: 100%;
   margin: 5%;
   align-items: center;
 }
@@ -60,8 +67,13 @@
   width: 50%;
   padding: 5%;
 }
+#card .card__content .about_image:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.2); /* Zoom au survol (120% de la taille d'origine) */
+}
 
 #carousel {
+  height: 100vh;
   background: #18302B;
 }
 #carousel h4 {
@@ -86,9 +98,36 @@
   display: flex;
   justify-content: center;
 }
+#carousel .rotate-on-hover:hover {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 #card2 {
+  height: 100vh;
   display: flex;
   justify-content: center;
   margin: 5%;
+}
+
+.scroll-container .scroll-container:before {
+  content: "";
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+.scroll-container .scroll-container a {
+  position: sticky;
+  cursor: pointer;
+  font-size: 20px;
+}
+.scroll-container .scroll-container a:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

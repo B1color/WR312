@@ -10,11 +10,14 @@ $background-color1: #FFF;
     color: $color;
   }
   
-
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior:smooth;
 }
+body {
+    position: relative;
+  }
 
 #b-page-header{
     background-image: url("image/Rectangle13.png");
@@ -43,7 +46,27 @@ $background-color1: #FFF;
     
     }
 }
+.row{
+    height: 100vh;
+}
+.scroll-container {
+position: relative;
+    .scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    .scroll-container a {
+        font-size: 20px;
+    }
+    .scroll-container a:hover {
+        color: #fff;
+    }
+    }
+}
+    
+
 #card{
+    height: 100vh;
     p{
         @include font-style(Quicksand, 20px, #1E1E1E);
     }
@@ -54,7 +77,6 @@ $background-color1: #FFF;
     }
     .card__content{
         display: flex;
-        width: 100%;
         margin: 5%;
         align-items: center;
         h3{
@@ -66,9 +88,16 @@ $background-color1: #FFF;
             width: 50%;
             padding: 5%;
         }
+        .about_image:hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.2); /* Zoom au survol (120% de la taille d'origine) */
+        }
+  
     }
 }
+
 #carousel{
+    height: 100vh;
     background: #18302B;
     h4{
         @include font-style(Rubik, 46px, #fff);
@@ -88,11 +117,28 @@ $background-color1: #FFF;
         display: flex;
       justify-content: center;
     }
+    .rotate-on-hover:hover {
+        animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    
+    }
 }
 #card2{
+    height: 100vh;
     display: flex;
     justify-content: center;
     margin: 5%;
    }
 
 
+
+
+  
