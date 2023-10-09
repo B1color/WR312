@@ -46,27 +46,16 @@ body {
     
     }
 }
-.row{
-    height: 100vh;
-}
-.scroll-container {
-position: relative;
-    .scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-    .scroll-container a {
-        font-size: 20px;
-    }
-    .scroll-container a:hover {
-        color: #fff;
-    }
-    }
-}
-    
+
+
 
 #card{
     height: 100vh;
+    #mousse{
+        display: flex;
+        justify-content: center;
+    }   
+    
     p{
         @include font-style(Quicksand, 20px, #1E1E1E);
     }

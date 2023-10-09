@@ -40,6 +40,10 @@ body {
 #card {
   height: 100vh;
 }
+#card #mousse {
+  display: flex;
+  justify-content: center;
+}
 #card p {
   font-family: Quicksand;
   font-size: 20px;
@@ -115,19 +119,4 @@ body {
   display: flex;
   justify-content: center;
   margin: 5%;
-}
-
-.scroll-container .scroll-container:before {
-  content: "";
-  display: block;
-  height: 100vh;
-  pointer-events: none;
-}
-.scroll-container .scroll-container a {
-  position: sticky;
-  cursor: pointer;
-  font-size: 20px;
-}
-.scroll-container .scroll-container a:hover {
-  color: #fff;
 }/*# sourceMappingURL=style.css.map */
