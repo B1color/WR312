@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
@@ -7,7 +8,7 @@
 }
 
 body {
-  position: relative;
+  height: 100%;
 }
 
 #b-page-header {
@@ -119,4 +120,36 @@ body {
   display: flex;
   justify-content: center;
   margin: 5%;
+}
+
+.arrow-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.arrow-container .arrow {
+  width: 40px;
+  height: 40px;
+  fill: #000; /* Couleur de la flèche */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-container .arrow:hover {
+  transform: translateY(5px);
+}
+
+.arrow-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.arrow-container .arrow {
+  width: 40px;
+  height: 40px;
+  fill: #000; /* Couleur de la flèche */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-container .arrow:hover {
+  transform: translateY(5px);
 }/*# sourceMappingURL=style.css.map */

@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <title>TD1</title>
 </head>
-<body>
+<body>    </div><div id="top"></div>
+
     <div id="b-page-header">
         <h1 class="b-page-header__heading">We Produce the<br> Legacy of<br> Excellence</h1>
-        <a href="" class="button">Contact Us</a>
+        <a href="" title="Contactez nous" class="button">Contact Us</a>
     </div>
     <div id="card">
         <div id="mousse">
@@ -38,7 +39,15 @@
                 </p>
             </div>
         </div>
-   
+        <div class="arrow-container">
+            <a href="#bottom" class="scroll-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 24l-8.485-8.485 1.414-1.414L12 20.172l7.071-7.071 1.414 1.414L12 24z"/>
+                </svg>                
+            </a>
+        </div>
+    
+
         <div class="card__content">
             <div class="card__featured">
                 <h3  class="card__featured-heading">Integrity, Synergy, Quality and Value</h3>
@@ -180,11 +189,41 @@
             </div>
         </div>
     </div>
+    <div id="bottom"></div>
+    
+    <script>
+        // Smooth scroll to the bottom
+        const scrollArrow = document.querySelector('.scroll-arrow');
+        scrollArrow.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = scrollArrow.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+       <div class="arrow_top">
+        <a href="#top" class="scroll-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 3l-8.485 8.485 1.414 1.414L12 5.828l7.071 7.071 1.414-1.414L12 3z"/>
+            </svg>
+            
+        </a>
 
+    <script>
+        // Smooth scroll to the top
+        const arrow_top = document.querySelector('.arrow_top');
+        scrollArrow.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = scrollArrow.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
     <div id="card2">
         <img src="image/Rectangle12.png" alt="iframe youtube">
     </div>
     </div>
-     
+         
+
 </body>
 </html>
