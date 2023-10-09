@@ -138,18 +138,18 @@ body {
   transform: translateY(5px);
 }
 
-.arrow-container {
+.arrow_top {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
 }
-.arrow-container .arrow {
+.arrow_top .arrow {
   width: 40px;
   height: 40px;
   fill: #000; /* Couleur de la flèche */
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-.arrow-container .arrow:hover {
+.arrow_top .arrow:hover {
   transform: translateY(5px);
 }/*# sourceMappingURL=style.css.map */
