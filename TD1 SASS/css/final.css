@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-image: url(/img/fond.jpg);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  margin: 2%;
+}
+nav img {
+  width: 125px;
+  height: 125px;
+  margin: 1%;
+}
+
+.card--a {
+  background-color: rgba(245, 243, 243, 0.831372549);
+  padding: 5%;
+}
+.card--a .card--a__img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.card--a .card--a__content_titre {
+  display: flex;
+  justify-content: center;
+}
+.card--a .card--a__content p {
+  display: flex;
+  justify-content: center;
+}
+
+.card--b {
+  display: grid;
+  grid-template-columns: 69% 30%; /* Max. width for 1st column? */
+  grid-template-rows: auto;
+  background-color: #ebebeb;
+}
+.card--b .card--b__img {
+  background-image: url(/img/img-1.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.card--b .card--b__content_icone {
+  display: flex;
+  justify-content: center;
+}
+.card--b .card--b__content, .card--b .card--c__content {
+  padding-top: 10%;
+}
+.card--b .card--b__titre {
+  display: flex;
+  justify-content: center;
+}
+.card--b .card--b__content_text, .card--b .card--c__content_text {
+  padding: 10%;
+}
+.card--b .card--b__content_image {
+  padding-top: 15%;
+}
+
+.card--c {
+  display: grid;
+  /*faire un display grid 70% / 30*/
+  grid-template-columns: 30% 70%; /* Max. width for 1st column? */
+  grid-template-rows: auto;
+  background-color: rgba(245, 243, 243, 0.831372549);
+}
+.card--c .card--c__img {
+  background-image: url(/img/img-4.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.card--c .card--c__content_icone, .card--c .card--c__titre {
+  display: flex;
+  justify-content: center;
+}
+.card--c .card--c__content_text {
+  padding: 10%;
+}
+.card--c .card--c__content {
+  padding-top: 10%;
+}
+.card--c .card--c__content_image {
+  display: flex;
+  align-items: end;
+}
+
+.card--d {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(245, 243, 243, 0.831372549);
+}
+.card--d .card--d1__img {
+  background-image: url(/img/img-5.jpg);
+  height: 485px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.card--d .card--d2__img-icone, .card--d .card--d2__titre {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+.card--d .card--d2__texte {
+  padding: 10%;
+}
+.card--d .card--d2__content-image2 {
+  background-image: url(/img/img-7.jpg);
+  height: 485px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.card--e {
+  height: 25vh;
+}
+.card--e .card--e_icone {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.card--e .card--e_titre, .card--e .card--e_texte {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.card--f {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(245, 243, 243, 0.831372549);
+}
+.card--f .card--f_row {
+  display: flex;
+}
+
+.card--g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  color: rgb(240, 240, 240);
+  background-color: #212121;
+}
+.card--g .card--g_centrale {
+  border: 1px solid rgb(240, 240, 240);
+  padding: 15px;
+}
+
+.card--h .card--h_icone {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.card--h .card--h_selector {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+.card--h .card--h_selector input {
+  padding: 1%;
+}
+.card--h .card--h_selector button {
+  padding: 1%;
+  background-color: rgb(64, 152, 56);
+}
+
+.grid-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(245, 243, 243, 0.831372549);
+  height: 25vh;
+}
+.grid-footer .footer-item__icone {
+  display: flex;
+}/*# sourceMappingURL=final.css.map */

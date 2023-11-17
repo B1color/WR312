@@ -1,0 +1,25 @@
+nav{
+    background-image: url(/img/fond.jpg);
+    width: 100%;
+    height: 100vh;
+    @include centre-block();
+    a{
+        margin: 2%;
+    }
+    img  {
+        width: 125px;
+        height: 125px;
+        margin: 1%;
+    }
+}
+
+.grid-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $back-ground;
+    height: 25vh;
+    .footer-item__icone{
+        display: flex;
+    }
+}

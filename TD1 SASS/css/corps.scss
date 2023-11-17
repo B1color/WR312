@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+
+.card--a{
+    background-color: $back-ground;
+    padding: 5%;
+    .card--a__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto ;
+    }
+    .card--a__content_titre{
+        @include centre-block();
+    }
+    .card--a__content p{
+        @include centre-block();
+
+      }
+}
+.card--b{
+    display: grid;
+        grid-template-columns: 69% 30%; /* Max. width for 1st column? */
+        grid-template-rows: auto;
+        background-color: $backcolor;
+    .card--b__img{
+         background-image: url(/img/img-1.jpg);
+        height: 600px;
+        background-repeat: no-repeat;
+        @include centre-block();
+        align-items: center;
+        background-size: cover
+    }
+    .card--b__content_icone{
+        @include centre-block();
+    }
+    .card--b__content, .card--c__content{
+        padding-top: 10%;
+    }
+    .card--b__titre{
+        @include centre-block();
+    }
+    .card--b__content_text, .card--c__content_text{
+        padding: 10%;
+    }
+    .card--b__content_image{
+        padding-top: 15%;
+    }
+}
+.card--c{
+    display: grid;
+    /*faire un display grid 70% / 30*/
+        grid-template-columns: 30% 70%; /* Max. width for 1st column? */
+        grid-template-rows: auto;
+        background-color: $back-ground;
+    .card--c__img{
+         background-image: url(/img/img-4.jpg);
+        height: 600px;
+        background-repeat: no-repeat;
+        @include centre-block();
+        align-items: center;
+        background-size: cover
+    }
+    .card--c__content_icone, .card--c__titre{
+        @include centre-block();
+    }
+    .card--c__content_text{
+        padding: 10%;
+    }
+    .card--c__content{
+        padding-top: 10%;
+    }
+    .card--c__content_image{
+        display: flex;
+        align-items: end;
+    }
+
+}
+.card--d{
+    display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: $back-ground;
+    .card--d1__img{
+         background-image: url(/img/img-5.jpg);
+        height:485px;
+        background-repeat: no-repeat;
+        @include centre-block();
+        align-items: center;
+        background-size: cover
+    }
+    .card--d2__img-icone, .card--d2__titre{
+        margin: 2%;
+        @include centre-block();
+    }
+    .card--d2__texte{
+        padding: 10%;
+    }
+    .card--d2__content-image2{
+        background-image: url(/img/img-7.jpg);
+        height:485px;
+        background-repeat: no-repeat;
+        @include centre-block();
+        align-items: center;
+        background-size: cover
+    }
+
+}
+.card--e{
+    height: 25vh;
+    .card--e_icone{
+        @include centre-block();
+        margin-top: 5%;
+    }
+    .card--e_titre,.card--e_texte{
+        @include centre-block();
+        margin: 1%;
+    }
+}
+.card--f{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: $back-ground;
+    .card--f_row{
+        display: flex;
+    }
+}
+.card--g{
+    @include centre-block();
+    align-items: center;
+    height:15vh ;
+    color: rgb(240, 240, 240);
+    background-color: #212121;
+    .card--g_centrale{
+        border: 1px solid rgb(240, 240, 240);
+        padding:15px ;
+    }
+}
+.card--h{
+    .card--h_icone{
+        @include centre-block();
+        margin: 5%;
+    }
+    .card--h_selector{
+        @include centre-block();
+        margin: 1%;
+        input{
+            padding: 1%;
+        }
+        button{
+            padding: 1%;
+            background-color: rgb(64, 152, 56);
+        }
+    }
+}
