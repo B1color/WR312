@@ -1,0 +1,9 @@
+$font-body: 'Lato', sans-serif;
+$font-content: #9390907b;
+$back-ground: #f5f3f3d4;
+$backcolor: #ebebeb;
+
+@mixin centre-block{
+    display: flex;
+    justify-content: center;
+}

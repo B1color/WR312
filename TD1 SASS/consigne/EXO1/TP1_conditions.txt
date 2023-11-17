@@ -1,0 +1,14 @@
+Conditions TP1
+
+Fragmenter le code en plusieurs parties (bien sur, c'est un minimum) : 
+	- Un fichier pour les variables
+	- Un fichier pour le layout (header + footer)
+	- Un fichier pour le corps de page
+	- Un fichier final, qui récupère les autres fichiers (et qui est compilé)
+
+Pour ce qui est des variables, il faut à minima passer en variable les couleurs et la font
+
+Le responsive n'est pas requis (après, pour aller plus loin vous pouvez le faire)
+
+
+Pour la font de la maquette, la police Lato est conseillée (disponible sur Google Font)
