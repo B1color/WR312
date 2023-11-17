@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Body {
+  background-image: url(images/papierpeint.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#card-container {
+  display: flex;
+  margin: 5%;
+  align-items: flex-start;
+}
+
+.toy-card {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Ombre initiale sans visibilité */
+  transition: box-shadow 0.3s ease-in-out; /* Animation de transition pour l'ombre */
+  background-color: orange;
+  width: 300px;
+  margin: 2%;
+  border-radius: 20px;
+}
+.toy-card .toy-card__image-color {
+  background: linear-gradient(40deg, rgb(105, 158, 72) 0%, rgb(114, 114, 205) 61%, rgb(0, 212, 255) 100%);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.toy-card .toy-card__image-color .toy-card__image {
+  display: flex;
+  justify-content: center;
+}
+.toy-card .toy-card__image-color .toy-card__image img {
+  width: 100px;
+}
+.toy-card .toy-card__name {
+  font-family: Arial;
+  font-size: 30px;
+  color: #000000;
+  background-color: orange;
+  font-weight: Bold;
+  text-align: center;
+}
+.toy-card .toy-card__description {
+  font-family: Arial;
+  font-size: 12px;
+  color: #a9a8a8;
+  background-color: white;
+  text-align: center;
+  padding: 5%;
+}
+.toy-card .toy-card__unit-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+.toy-card .toy-card__unit-stats .stat {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 5%;
+}
+.toy-card .toy-card__unit-stats .one-third:nth-child(2) {
+  border-left: 1px solid #c99875;
+  border-right: 1px solid #c99875;
+  padding: 5%;
+  height: 100%;
+}
+
+.toy-card:hover {
+  box-shadow: 5px 50px 25px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+.toy-card:hover .toy-card__unit-stats {
+  height: 90px;
+  opacity: 1;
+}
+.toy-card:hover img {
+  transform: scale(1.2) translateY(-20px);
+  transition: 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

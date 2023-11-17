@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo4</title>
+</head>
+<body>
+    <h1>Exo4</h1>   
+</body>
+<script type="text/javascript">
+fetch("datastory.json")   
+    .then(response => {
+        // Traiter la réponse (peut inclure la conversion en JSON, etc.)
+        return response.json(); // ou response.text(), response.blob(), etc.
+    })
+    .then(data => {
+        // Utiliser les données obtenues
+        console.log(data);
+    })
+    .catch(error => {
+        // Gérer les erreurs éventuelles
+        console.error('Erreur lors de la requête :', error);
+    });
+
+</script>
+</html>
